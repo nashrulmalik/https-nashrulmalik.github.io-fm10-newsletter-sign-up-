@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400; /* Default weight */
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="card1">
+        <div class="inner1">
+          <img src="images/image-jeremy.png" width="76">
+          <div>
+            <span>Report For</span>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="button-group">
+          <div id="dailyBtn" class="myButton selected">Daily</div>
+          <div id="weeklyBtn" class="myButton">Weekly</div>
+          <div id="monthlyBtn" class="myButton">Monthly</div>
+        </div>
+        
+      </div>
+      <div class="card2">
+        <div class="inner-card">
+          <div class="title">Work<img src="images/icon-ellipsis.svg" /></div>
+          <div class="content" id="work"></div>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="inner-card">
+          <div class="title">Play<img src="images/icon-ellipsis.svg" /></div>
+          <div class="content" id="play"></div>
+        </div>
+      </div>
+      <div class="card4">
+        <div class="inner-card">
+          <div class="title">Study<img src="images/icon-ellipsis.svg" /></div>
+          <div class="content" id="study"></div>
+        </div>
+      </div>
+      <div class="card5">
+        <div class="inner-card">
+          <div class="title">
+            Exercise<img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="content" id="exercise"></div>
+        </div>
+      </div>
+      <div class="card6">
+        <div class="inner-card">
+          <div class="title">Social<img src="images/icon-ellipsis.svg" /></div>
+          <div class="content" id="social"></div>
+        </div>
+      </div>
+      <div class="card7">
+        <div class="inner-card">
+          <div class="title">
+            Self Care<img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="content" id="self-care"></div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,227 @@
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+
+    --very-dark-blue: hsl(226, 43%, 10%);   /* #0E1323 - background      */
+    --dark-blue: hsl(235, 46%, 20%);        /* #1C204B - card bg         */
+    --desaturated-blue: hsl(235, 45%, 61%); /* #33397A - hovered card bg */
+    --pale-blue: hsl(236, 100%, 87%);       /* #BBC0FF - text and 3 dot  */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    height: 100dvh;
+    align-items: center;
+}
+
+main {
+    width: 1110px;
+    height: 518px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 {
+    border-radius: 16px;
+}
+
+.card2, .card3, .card4, .card5, .card6, .card7 {
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: 160px -5px;
+}
+
+.card1 {
+    background-color: var(--dark-blue);
+    grid-row-start: 2 span;
+}
+
+.card2 {
+    background-color: var(--light-red-work);
+    background-image: url('images/icon-work.svg');
+}
+
+.card3 {
+    background-color: var(--soft-blue-play);
+    background-image: url('images/icon-play.svg');
+}
+
+.card4 {
+    background-color: var(--light-red-study);
+    background-image: url('images/icon-study.svg');
+}
+
+.card5 {
+    background-color: var(--lime-green-exercise);
+    background-image: url('images/icon-exercise.svg');
+}
+
+.card6 {
+    background-color: var(--violet-social);
+    background-image: url('images/icon-social.svg');
+}
+
+.card7 {
+    background-color: var(--soft-orange-self-care);
+    background-image: url('images/icon-self-care.svg');
+}
+
+.inner-card {
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 199px;
+    border-radius: 15px;
+    padding: 32px;
+}
+
+.inner-card:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.inner1 {
+    background-color: var(--blue);
+    width: 100%;
+    height: 354px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding :32px;
+}
+
+span {
+    color: var(--pale-blue);
+}
+
+.inner-card p {
+    color: var(--pale-blue)
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.myButton {
+    padding: 10px 32px;
+    color: var(--pale-blue);
+    cursor: pointer;
+}
+
+.myButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    color: white;
+}
+
+@media (max-width: 1110px) {
+    /* Your CSS rules here */
+    body {
+
+        align-items: flex-start;
+        margin: 81px 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-width: 327px;
+    }
+
+    .card1 {
+        height: 203px;
+    }
+
+    .card2, .card3, .card4, .card5, .card6, .card7 {
+        height: 160px;
+        background-position: 230px -5px;
+    }
+    
+    .inner-card {
+        height: 122px;
+    }
+
+    .inner1 {
+        height: 133px;
+    }
+
+    .title {
+        margin-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .button-group {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .myButton {
+        padding: 24px;
+        width: 109px;
+        text-align: center;
+    }
+
+    .inner1 {
+        flex-direction: row;
+        gap: 20px;
+        padding: 30px;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;;
+    }
+}
