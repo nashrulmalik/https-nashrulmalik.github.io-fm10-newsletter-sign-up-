@@ -41,7 +41,7 @@ fetch('data.json')
     }
 
     // Initial display (e.g., Daily)
-    displayData('daily');
+    displayData('weekly');
 
     // Add event listeners to buttons
     dailyBtn.addEventListener('click', () => displayData('daily'));
