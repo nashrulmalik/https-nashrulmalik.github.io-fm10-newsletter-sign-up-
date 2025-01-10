@@ -146,6 +146,7 @@ h2 {
     padding: 10px 32px;
     color: var(--pale-blue);
     cursor: pointer;
+    font-weight: 300;
 }
 
 .myButton:hover {
@@ -154,6 +155,7 @@ h2 {
 
 .selected {
     color: white;
+    font-weight: 500;
 }
 
 @media (max-width: 1110px) {
